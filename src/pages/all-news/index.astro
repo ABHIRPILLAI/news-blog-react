@@ -1,0 +1,21 @@
+---
+import AllNews from "../../components/AllNews";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="News Blog">
+    <div class="bg-[#F3F3F3] px-[30px] lg:px-[50px] py-[200px] lg:py-[147px]">
+        <div
+            class="bg-white lg:pl-[74px] lg:pr-[66px] py-[63px] rounded-[30px] flex flex-col gap-[50px] xl:items-center"
+        >
+            <div class="px-[30px] md:px-0">
+                <p
+                    class="kanit xl:text-center font-medium mb-2 text-[40px] lg:text-[64px] text-[#313131] leading-[44px] lg:leading-[73.6px]"
+                >
+                    Latest News
+                </p>
+            </div>
+            <AllNews client:load />
+        </div>
+    </div>
+</Layout>
